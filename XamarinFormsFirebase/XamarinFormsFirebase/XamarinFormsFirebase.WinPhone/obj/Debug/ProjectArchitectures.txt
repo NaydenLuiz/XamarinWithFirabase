@@ -1,0 +1,2 @@
+c:\Users\Bimore\Documents\Visual Studio 2015\Projects\XamarinFormsFirebase\XamarinFormsFirebase\XamarinFormsFirebase.WinPhone\XamarinFormsFirebase.WinPhone.csproj;neutral
+c:\Users\Bimore\Documents\Visual Studio 2015\Projects\XamarinFormsFirebase\XamarinFormsFirebase\XamarinFormsFirebase\XamarinFormsFirebase.csproj;neutral
