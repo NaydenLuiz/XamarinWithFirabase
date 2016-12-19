@@ -78,5 +78,5 @@ c:\Users\Bimore\Documents\Visual Studio 2015\Projects\XamarinFormsFirebase\Xamar
 c:\Users\Bimore\Documents\Visual Studio 2015\Projects\XamarinFormsFirebase\XamarinFormsFirebase\XamarinFormsFirebase.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 c:\Users\Bimore\Documents\Visual Studio 2015\Projects\XamarinFormsFirebase\XamarinFormsFirebase\XamarinFormsFirebase.Droid\obj\Debug\android\assets\XamarinFormsFirebase.dll.mdb
 c:\Users\Bimore\Documents\Visual Studio 2015\Projects\XamarinFormsFirebase\XamarinFormsFirebase\XamarinFormsFirebase.Droid\obj\Debug\android\assets\XamarinFormsFirebase.Droid.dll.mdb
-c:\Users\Bimore\Documents\Visual Studio 2015\Projects\XamarinFormsFirebase\XamarinFormsFirebase\XamarinFormsFirebase.Droid\obj\Debug\XamarinFormsFirebase.Droid.dll.mdb
-c:\Users\Bimore\Documents\Visual Studio 2015\Projects\XamarinFormsFirebase\XamarinFormsFirebase\XamarinFormsFirebase.Droid\bin\Debug\XamarinFormsFirebase.Droid.dll.mdb
+C:\Users\Bimore\documents\visual studio 2015\Projects\XamarinFormsFirebase\XamarinFormsFirebase\XamarinFormsFirebase.Droid\obj\Debug\XamarinFormsFirebase.Droid.dll.mdb
+C:\Users\Bimore\documents\visual studio 2015\Projects\XamarinFormsFirebase\XamarinFormsFirebase\XamarinFormsFirebase.Droid\bin\Debug\XamarinFormsFirebase.Droid.dll.mdb
