@@ -24,7 +24,7 @@ namespace XamarinFormsFirebase
 
         public async void OnceAsync()
         {
-            var firebase = new FirebaseClient("https://yourdatabase.firebaseio.com/");
+            var firebase = new FirebaseClient("https://every-611ac.firebaseio.com/");
             var items = await firebase.Child("yourEntity").OnceAsync<MyClass>();
 
             foreach (var item in items)
@@ -35,7 +35,7 @@ namespace XamarinFormsFirebase
 
         public async void SalvarAsync()
         {
-            var firebase = new FirebaseClient("https://yourdatabase.firebaseio.com/");
+            var firebase = new FirebaseClient("https://every-611ac.firebaseio.com/");
 
             // add new item to list of data 
 
@@ -53,8 +53,9 @@ namespace XamarinFormsFirebase
 
         public  void Realtime()
         {
-            var firebase = new FirebaseClient("https://dinosaur-facts.firebaseio.com/");
+            var firebase = new FirebaseClient("https://every-611ac.firebaseio.com/");
             var observable = firebase.Child("dinosaurs").AsObservable<MyClass>().Subscribe(d => Debug.WriteLine(d.Key));
+            var fireshat = new 
         }
 
         public async void Autentication()
@@ -75,7 +76,7 @@ namespace XamarinFormsFirebase
              auth = await authProvider.SignInWithOAuthAsync(FirebaseAuthType.Facebook, facebookAccessToken);
 
             // Using the Auth token to make requests.. (see more on requests below)
-            var firebase = new FirebaseClient("https://dinosaur-facts.firebaseio.com/");
+            var firebase = new FirebaseClient("https://every-611ac.firebaseio.com/");
             var dinos = await firebase
               .Child("dinosaurs")
               .WithAuth(auth.FirebaseToken) // <-- Note the use of the Firebase Auth Token
