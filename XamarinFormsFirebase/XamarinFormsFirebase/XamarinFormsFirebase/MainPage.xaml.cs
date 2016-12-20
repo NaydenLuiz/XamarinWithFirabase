@@ -18,14 +18,14 @@ namespace XamarinFormsFirebase
         public MainPage()
         {
             InitializeComponent();
-
+            Autentication();
         }
 
 
         public async void OnceAsync()
         {
-            var firebase = new FirebaseClient("https://every-611ac.firebaseio.com/");
-            var items = await firebase.Child("yourEntity").OnceAsync<MyClass>();
+            var firebase = new FirebaseClient("https://every-611ac.firebaseio.com");
+            var items = await firebase.Child("users").OnceAsync<MyClass>();
 
             foreach (var item in items)
             {
@@ -35,7 +35,7 @@ namespace XamarinFormsFirebase
 
         public async void SalvarAsync()
         {
-            var firebase = new FirebaseClient("https://every-611ac.firebaseio.com/");
+            var firebase = new FirebaseClient("https://every-611ac.firebaseio.com");
 
             // add new item to list of data 
 
@@ -53,30 +53,30 @@ namespace XamarinFormsFirebase
 
         public  void Realtime()
         {
-            var firebase = new FirebaseClient("https://every-611ac.firebaseio.com/");
+            var firebase = new FirebaseClient("https://every-611ac.firebaseio.com");
             var observable = firebase.Child("dinosaurs").AsObservable<MyClass>().Subscribe(d => Debug.WriteLine(d.Key));
-            var fireshat = new 
+          
         }
 
         public async void Autentication()
         {
             // Email/Password Auth
-            var authProvider = new FirebaseAuthProvider(new FirebaseConfig("<google.firebase.com API Key>"));
+            var authProvider = new FirebaseAuthProvider(new FirebaseConfig("AIzaSyCaPalb-FEWKuBAjy25f0oCqOqoaiRJGsA"));
 
-            var auth = await authProvider.CreateUserWithEmailAndPasswordAsync("email@email.com", "password");
+            var auth = await authProvider.CreateUserWithEmailAndPasswordAsync("nayden.luiz@gmail.com","mudar123");
 
             // The auth Object will contain auth.User and the Authentication Token from the request
             System.Diagnostics.Debug.WriteLine(auth.FirebaseToken);
 
 
             // Facebook Auth
-             authProvider = new FirebaseAuthProvider(new FirebaseConfig("<google.firebase.com API Key>"));
+             authProvider = new FirebaseAuthProvider(new FirebaseConfig("AIzaSyCaPalb-FEWKuBAjy25f0oCqOqoaiRJGsA"));
             var facebookAccessToken = "<login with facebook and get oauth access token>";
 
              auth = await authProvider.SignInWithOAuthAsync(FirebaseAuthType.Facebook, facebookAccessToken);
 
             // Using the Auth token to make requests.. (see more on requests below)
-            var firebase = new FirebaseClient("https://every-611ac.firebaseio.com/");
+            var firebase = new FirebaseClient("https://every-611ac.firebaseio.com");
             var dinos = await firebase
               .Child("dinosaurs")
               .WithAuth(auth.FirebaseToken) // <-- Note the use of the Firebase Auth Token
